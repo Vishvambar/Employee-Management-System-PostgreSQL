@@ -6,7 +6,7 @@
 [![Tests](https://img.shields.io/badge/Verification-100%25%20Passed-brightgreen.svg)]()
 [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)]()
 
-> **Practical Experiment 1**: Design and Implementation of an Employee Data Management System with Full CRUD Operations using Python and PostgreSQL.
+> An enterprise-grade, relational employee data management and payroll analytics system powered by PostgreSQL, implementing 3NF normalized tables, ACID-compliant CRUD operations, and executive visual dashboards.
 
 ---
 
@@ -18,8 +18,8 @@
 - [Installation & Quick Start](#-installation--quick-start)
 - [Module Architecture](#-module-architecture)
 - [Analytical Visualizations (300 DPI)](#-analytical-visualizations-300-dpi)
-- [Evaluation & Verification](#-evaluation--verification)
-- [Reports & Documentation](#-reports--documentation)
+- [System Verification & Testing](#-system-verification--testing)
+- [Engineering Documentation](#-engineering-documentation)
 
 ---
 
@@ -102,8 +102,8 @@ AnalysisOf_Employee_Management_System/
 ├── run_all_tests.py                 # Non-interactive automated evaluator test suite
 ├── main.py                          # Interactive terminal CLI application
 ├── requirements.txt                 # Project dependencies
-├── EXPERIMENT_1_REPORT.md           # 15-page comprehensive academic manual
-├── OUTPUT_REPORT_SUBMISSION.md      # Printable 1-2 page evaluator report
+├── TECHNICAL_SPECIFICATION.md       # Comprehensive system architecture & technical specification
+├── BENCHMARKS_AND_VERIFICATION.md   # Production verification & audit report
 └── visualizations/
     ├── 1_department_salary_distribution.png
     ├── 2_role_salary_scatter.png
@@ -165,7 +165,8 @@ python3 visualizer.py
 
 ---
 
-## 🧪 Evaluation & Verification Summary
+## 🧪 System Verification & Testing
+All CRUD operations, relational joins, and transaction safeguards are verified via an automated test suite:
 
 | Operation Verified | Target Entity | Status | Description |
 | :--- | :--- | :---: | :--- |
@@ -177,6 +178,7 @@ python3 visualizer.py
 
 ---
 
-## 📑 Reports & Documentation
-- **Full Academic Lab Manual**: [`EXPERIMENT_1_REPORT.md`](EXPERIMENT_1_REPORT.md) — Follows VTU/University schema with Theory, Algorithm, Step-by-Step Code Walkthrough, and 10 Viva Voce Q&As.
-- **Concise Evaluator Submission (1-2 Pages)**: [`OUTPUT_REPORT_SUBMISSION.md`](OUTPUT_REPORT_SUBMISSION.md) — Tailored for lab demonstration and quick grading.
+## 📑 Engineering Documentation
+- **System Architecture & Technical Specification**: [`TECHNICAL_SPECIFICATION.md`](TECHNICAL_SPECIFICATION.md) — Comprehensive design document detailing relational modeling, transaction safety, constraints, and query optimization.
+- **Production Benchmarks & Verification**: [`BENCHMARKS_AND_VERIFICATION.md`](BENCHMARKS_AND_VERIFICATION.md) — Automated test logs, row audits, and system performance benchmarks.
+

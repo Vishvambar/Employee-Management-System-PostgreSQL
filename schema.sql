@@ -1,6 +1,5 @@
--- ============================================================================
 -- Database Schema: Employee Management System (PostgreSQL)
--- Experiment / Task 1: Relational Schema for Departments, Roles, and Employees
+-- Enterprise Relational Schema for Departments, Roles, and Employees
 -- ============================================================================
 
 -- Drop views & tables in reverse order of foreign key dependency if exists

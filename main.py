@@ -380,8 +380,9 @@ def main():
     clear_screen()
     print("=" * 75)
     print("  PYTHON-BASED EMPLOYEE DATA MANAGEMENT SYSTEM (POSTGRESQL)")
-    print("  Practical Task 1: Relational Schema, CRUD, Analytics & Visualization")
+    print("  Enterprise Relational Schema, CRUD, Analytics & Visualization")
     print("=" * 75)
+
 
     if not test_connection():
         print("[!] Could not connect to PostgreSQL. Please check your credentials or server.")

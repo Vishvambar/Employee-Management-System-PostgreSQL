@@ -1,28 +1,21 @@
-# Experiment / Practical Report 1
+# Technical Specification & Architecture: Employee Management System
 
-## Title
-**Development of Python-Based Employee Management System using SQL/PostgreSQL**  
-*(Design and Implementation of Employee Data Management System with CRUD Operations using Python and PostgreSQL)*
-
----
-
-### Aim
-To develop a robust, modular Python-based system for managing employee data using an SQL/PostgreSQL relational database. The system performs creation, retrieval, updating, and deletion (CRUD) of employee records while managing departments, job roles, and referential integrity constraints.
-
-### Course Outcomes (CO)
-- **CO1:** Understand relational database schemas, connectivity mechanisms, and data retrieval in Python.
-- **CO5:** Design, implement, and analyze data management workflows with CRUD operations, SQL joins, aggregations, and data visualization.
+## System Overview
+**Python-Based Employee Data Management System with PostgreSQL Backend**  
+*Enterprise Relational Schema Design, ACID-Compliant CRUD Operations, Multi-Table Analytics, and Visual Dashboards*
 
 ---
 
-### Objectives
-After performing this experiment, the student is able to:
-1. **Understand Python connectivity** with an SQL/PostgreSQL relational database server using `psycopg2`.
-2. **Design relational tables** for `departments`, `roles`, and `employees` with primary keys, foreign keys, constraints, and audit timestamps.
-3. **Establish and manage database connections** cleanly using Python context managers and transaction handling.
-4. **Perform core CRUD (Create, Read, Update, Delete) operations** through programmatic SQL queries.
-5. **Retrieve and manage employee information** with multi-table `INNER JOIN` and `LEFT JOIN` aggregations.
-6. **Generate analytical reports and data visualizations** using `pandas`, `matplotlib`, and `seaborn`.
+### Executive Summary
+A production-ready, modular Python system for managing enterprise organizational hierarchies, employee records, and payroll accounting using a PostgreSQL relational database. The architecture guarantees referential integrity, transaction atomicity, and high-performance querying through normalized relational modeling.
+
+### Core Architectural Objectives
+1. **Relational Database Engineering**: Establish robust Python connectivity with PostgreSQL using connection pooling and context managers.
+2. **Normalized Schema Design (3NF)**: Design normalized tables (`departments`, `roles`, `employees`) with primary keys, foreign key constraints (`ON DELETE RESTRICT`), and audit timestamps.
+3. **Transaction Management**: Ensure ACID compliance (Atomicity, Consistency, Isolation, Durability) across all write operations.
+4. **Parameterized SQL Queries**: Eliminate SQL injection vectors using parameterized queries via `psycopg2`.
+5. **Complex Analytical Reporting**: Execute multi-table `INNER JOIN` and aggregate queries for department payroll metrics and salary distributions.
+6. **Executive Data Visualization**: Generate publication-grade 300 DPI analytics charts using `matplotlib`, `seaborn`, and `pandas`.
 
 ---
 
@@ -255,9 +248,10 @@ python3 visualizer.py
 
 ---
 
-## 7. Learning Outcomes & Conclusion
-1. Successfully designed and implemented a normalized relational schema with PostgreSQL (`departments`, `roles`, `employees`).
-2. Established secure, resilient Python connectivity via `psycopg2` using connection context managers.
-3. Implemented full CRUD functionality with constraint validation, rollback handling, and transaction safety.
-4. Leveraged SQL `JOIN`s and aggregation functions (`COUNT`, `AVG`, `SUM`, `MIN`, `MAX`) to generate organizational metrics.
-5. Successfully integrated Python Data Visualization libraries (`matplotlib`, `seaborn`, `pandas`) to transform relational database records into executive visual dashboards.
+## 7. Architecture Summary & Key Deliverables
+1. **Normalized Relational Schema**: Designed and implemented 3NF relational PostgreSQL schema (`departments`, `roles`, `employees`) with strict referential constraints.
+2. **Resilient Python Connectivity**: Established secure, production-grade connection pooling using context managers and parameterized queries.
+3. **Transaction-Safe CRUD**: Implemented atomic data mutation routines with rollback safety.
+4. **Relational SQL Analytics**: Computed multi-table aggregates, salary distribution percentiles, and organizational payroll metrics.
+5. **Executive Visual Analytics**: Automated the generation of high-resolution 300 DPI executive charts (`matplotlib`, `seaborn`, `pandas`).
+

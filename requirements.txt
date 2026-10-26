@@ -1,4 +1,4 @@
-# Dependencies for Task 1: Python-Based Employee Management System using PostgreSQL
+# Dependencies: Python-Based Employee Management System using PostgreSQL
 psycopg2-binary>=2.9.9
 pandas>=2.0.0
 matplotlib>=3.8.0
